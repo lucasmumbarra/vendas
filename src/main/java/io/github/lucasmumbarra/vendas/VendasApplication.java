@@ -36,6 +36,8 @@ public class VendasApplication {
 			Cliente cliente = clientes.findClienteFetchPedidos(fulano.getId());
 			System.out.println(cliente);
 			System.out.println(cliente.getPedidos());
+
+			pedidos.findByCliente(fulano).forEach(System.out::println);
 		};
 	}
 
