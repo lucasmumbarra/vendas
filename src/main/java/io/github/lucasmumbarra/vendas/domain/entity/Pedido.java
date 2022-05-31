@@ -17,7 +17,7 @@ import javax.persistence.Table;
 @Entity
 @Table(name = "pedido")
 public class Pedido {
-  
+
   @Id
   @GeneratedValue(strategy = GenerationType.AUTO)
   private Integer id;
@@ -69,5 +69,14 @@ public class Pedido {
 
   public void setTotal(BigDecimal total) {
     this.total = total;
+  }
+
+  @Override
+  public String toString() {
+    return "Pedido{" +
+        "id=" + id +
+        ", dataPedido=" + dataPedido +
+        ", total=" + total +
+        '}';
   }
 }
