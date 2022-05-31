@@ -1,4 +1,4 @@
-package io.github.lucasmumbarra.vendas.domain.repositorio;
+package io.github.lucasmumbarra.vendas.domain.repository;
 
 import java.util.List;
 
